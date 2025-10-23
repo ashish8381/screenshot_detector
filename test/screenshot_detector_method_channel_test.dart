@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:screenshot_detector/screenshot_detector_method_channel.dart';
+import 'package:screenshot_watcher/screenshot_detector_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
