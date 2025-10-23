@@ -4,7 +4,7 @@ version: 0.0.1
 documentation: https://github.com/ashish8381/screenshot_detector#readme
 homepage: https://github.com/ashish8381/screenshot_detector
 repository: https://github.com/ashish8381/screenshot_detector
-publish_to: "https://pub.dev" # ensures it can be published
+#publish_to: "https://pub.dev" # ensures it can be published
 
 environment:
   sdk: ^3.8.1
