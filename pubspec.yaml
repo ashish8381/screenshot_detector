@@ -1,4 +1,4 @@
-name: screenshot_detector
+name: screenshot_watcher
 description: A Flutter plugin to detect screenshots on Android and iOS.
 version: 0.0.1
 documentation: https://github.com/ashish8381/screenshot_detector#readme
