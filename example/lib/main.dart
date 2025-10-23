@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:screenshot_detector/screenshot_detector.dart';
 
@@ -25,11 +24,15 @@ class _MyAppState extends State<MyApp> {
     // Listen for screenshot events
     _screenshotSubscription =
         ScreenshotDetector.onScreenshot.listen((_) {
+          // Check if the widget is still mounted
+          if (!mounted) return;
+
+          // Update UI
           setState(() {
             _message = 'Screenshot detected! 🚨';
           });
 
-          // Optionally, show a Snackbar
+          // Show a Snackbar safely
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('Screenshot detected!'),
