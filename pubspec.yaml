@@ -1,0 +1,33 @@
+name: screenshot_detector
+description: A Flutter plugin to detect screenshots on Android and iOS.
+version: 0.0.1
+documentation: https://github.com/ashish8381/screenshot_detector#readme
+homepage: https://github.com/ashish8381/screenshot_detector
+repository: https://github.com/ashish8381/screenshot_detector
+publish_to: "https://pub.dev" # ensures it can be published
+
+environment:
+  sdk: ^3.8.1
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  plugin:
+    platforms:
+      android:
+        package: com.ashish.screenshot_detector
+        pluginClass: ScreenshotDetectorPlugin
+      ios:
+        pluginClass: ScreenshotDetectorPlugin
+
+
