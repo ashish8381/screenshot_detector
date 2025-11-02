@@ -2,8 +2,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class ScreenshotDetector {
-  static const MethodChannel _channel =
-  MethodChannel('screenshot_detector');
+  static const MethodChannel _channel = MethodChannel('screenshot_detector');
 
   static StreamController<void>? _screenshotController;
 
@@ -18,4 +17,3 @@ class ScreenshotDetector {
     return _screenshotController!.stream;
   }
 }
-

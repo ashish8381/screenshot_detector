@@ -8,7 +8,8 @@ abstract class ScreenshotDetectorPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static ScreenshotDetectorPlatform _instance = MethodChannelScreenshotDetector();
+  static ScreenshotDetectorPlatform _instance =
+      MethodChannelScreenshotDetector();
 
   /// The default instance of [ScreenshotDetectorPlatform] to use.
   ///
