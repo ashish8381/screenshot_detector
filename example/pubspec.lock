@@ -186,13 +186,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.3"
-  screenshot_detector:
+  screenshot_watcher:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.1.0"
   sky_engine:
     dependency: transitive
     description: flutter

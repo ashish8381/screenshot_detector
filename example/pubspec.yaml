@@ -17,7 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  screenshot_detector:
+  screenshot_watcher:
     # When depending on this package from a real application you should use:
     #   screenshot_detector: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

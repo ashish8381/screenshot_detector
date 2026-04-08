@@ -2,6 +2,7 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'screenshot_detector_method_channel.dart';
 
+/// Platform interface for native screenshot detector implementations.
 abstract class ScreenshotDetectorPlatform extends PlatformInterface {
   /// Constructs a ScreenshotDetectorPlatform.
   ScreenshotDetectorPlatform() : super(token: _token);
@@ -24,6 +25,7 @@ abstract class ScreenshotDetectorPlatform extends PlatformInterface {
     _instance = instance;
   }
 
+  /// Returns a human-readable platform version string when available.
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
